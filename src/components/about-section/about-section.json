@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_about_section_about_sections",
+  "info": {
+    "displayName": "AboutSection"
+  },
+  "options": {},
+  "attributes": {
+    "Header": {
+      "type": "string"
+    },
+    "Text": {
+      "type": "richtext"
+    }
+  }
+}

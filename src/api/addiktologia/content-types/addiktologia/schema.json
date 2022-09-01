@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "addiktologias",
+  "info": {
+    "singularName": "addiktologia",
+    "pluralName": "addiktologias",
+    "displayName": "Addiktológia"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "AddiktologiaSection": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-section.about-section"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "groups",
+  "info": {
+    "singularName": "group",
+    "pluralName": "groups",
+    "displayName": "Group"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "GroupTiles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "group-tiles.group-tiles"
+    }
+  }
+}

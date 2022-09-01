@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "prices",
+  "info": {
+    "singularName": "price",
+    "pluralName": "prices",
+    "displayName": "Price"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PricesTiles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "prices-tiles.prices-tiles"
+    }
+  }
+}

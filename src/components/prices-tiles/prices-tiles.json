@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_prices_tiles_prices_tiles",
+  "info": {
+    "displayName": "PricesTiles",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "PriceOne": {
+      "type": "string"
+    },
+    "PriceOneName": {
+      "type": "string"
+    },
+    "PriceTwo": {
+      "type": "string"
+    },
+    "PriceTwoName": {
+      "type": "string"
+    },
+    "PriceThree": {
+      "type": "string"
+    },
+    "PriceThreeName": {
+      "type": "string"
+    },
+    "PriceFour": {
+      "type": "string"
+    },
+    "PriceFourName": {
+      "type": "string"
+    },
+    "PriceFive": {
+      "type": "string"
+    },
+    "PriceFiveName": {
+      "type": "string"
+    }
+  }
+}

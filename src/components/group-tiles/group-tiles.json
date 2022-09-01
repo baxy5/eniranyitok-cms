@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_group_tiles_group_tiles",
+  "info": {
+    "displayName": "GroupTiles"
+  },
+  "options": {},
+  "attributes": {
+    "TileOne": {
+      "type": "string"
+    },
+    "TileTwo": {
+      "type": "string"
+    },
+    "TileThree": {
+      "type": "string"
+    },
+    "TileFour": {
+      "type": "string"
+    },
+    "TileFive": {
+      "type": "string"
+    },
+    "TileOneRich": {
+      "type": "richtext"
+    },
+    "TileTwoRich": {
+      "type": "richtext"
+    },
+    "TileThreeRich": {
+      "type": "richtext"
+    },
+    "TileFourRich": {
+      "type": "richtext"
+    },
+    "TileFiveRich": {
+      "type": "richtext"
+    }
+  }
+}

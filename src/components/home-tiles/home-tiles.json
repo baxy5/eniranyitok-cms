@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_home_tiles_home_tiles",
+  "info": {
+    "displayName": "HomeTiles"
+  },
+  "options": {},
+  "attributes": {
+    "TileOne": {
+      "type": "string"
+    },
+    "TileTwo": {
+      "type": "string"
+    },
+    "TileThree": {
+      "type": "string"
+    },
+    "TileFour": {
+      "type": "string"
+    },
+    "TileOneRich": {
+      "type": "richtext"
+    },
+    "TileTwoRich": {
+      "type": "richtext"
+    },
+    "TileThreeRich": {
+      "type": "richtext"
+    },
+    "TileFourRich": {
+      "type": "richtext"
+    }
+  }
+}

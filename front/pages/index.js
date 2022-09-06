@@ -1,4 +1,5 @@
 import Head from "next/head";
+import qs from "qs";
 
 import Layout from "../components/Layout";
 import About from "../components/About";
@@ -15,7 +16,6 @@ export default function Home() {
       </Head>
       <Layout>
         <Hero />
-
         <About />
       </Layout>
     </div>

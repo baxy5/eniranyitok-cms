@@ -55,7 +55,7 @@ const Footer = () => {
             xmlns="http://www.w3.org/2000/svg"
             className="mr-2"
           >
-            <g clip-path="url(#clip0_5_57)">
+            <g clipPath="url(#clip0_5_57)">
               <path
                 fillRule="evenodd"
                 clipRule="evenodd"
@@ -79,7 +79,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center pb-5">
         <p className="mr-2">Minden jog fenntartva</p>
         <span>
           <svg

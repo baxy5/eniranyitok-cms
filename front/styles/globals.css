@@ -19,3 +19,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.quote {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../public/idezet_bg.jpg);
+  background-position: center;
+  background-size: cover;
+}

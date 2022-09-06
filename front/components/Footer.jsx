@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-[#1B1B1B] text-[#9F844E] text-lg py-10">
+    <div className="bg-[#1B1B1B] text-[#9F844E] text-lg py-10" id="contact">
       <div className="sm:flex sm:justify-around sm:p-5">
         <div className="flex items-center justify-center pb-7">
           <svg

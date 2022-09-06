@@ -9,6 +9,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Nunito", sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -30,6 +31,12 @@ a {
 .about {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../public/szalai_eva.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.main-nav {
+  background-image: url(../public/hero-bg.jpg);
   background-position: center;
   background-size: cover;
 }

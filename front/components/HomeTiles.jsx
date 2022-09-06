@@ -1,11 +1,8 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
-import { useMemo } from "react";
 import { useState } from "react";
 
-/* res.data.attributes.HomeTiles[0] */
-
-const Groups = () => {
+const HomeTiles = () => {
   const [tileData, setTileData] = useState({});
 
   const fetchData = () => {
@@ -17,7 +14,7 @@ const Groups = () => {
   };
 
   useEffect(() => {
-    fetchData();
+    const data = fetchData();
   }, []);
 
   return (
@@ -69,4 +66,4 @@ const Groups = () => {
   );
 };
 
-export default Groups;
+export default HomeTiles;

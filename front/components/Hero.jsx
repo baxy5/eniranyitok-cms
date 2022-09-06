@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import Groups from "../components/Groups";
+import HomeTiles from "../components/HomeTiles";
 
 const Hero = () => {
   return (
@@ -22,7 +22,7 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <Groups />
+      <HomeTiles />
     </div>
   );
 };

@@ -10,6 +10,7 @@ body {
   margin: 0;
   font-family: "Nunito", sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 a {
@@ -39,6 +40,14 @@ a {
   background-image: url(../public/hero-bg.jpg);
   background-position: center;
   background-size: cover;
+}
+
+.card {
+  backdrop-filter: blur(11px) saturate(151%);
+  -webkit-backdrop-filter: blur(11px) saturate(151%);
+  background-color: #16171850;
+  border-radius: 5px;
+  border: 1px solid #9f844e;
 }
 
 .btn-one {

@@ -1,32 +1,33 @@
 {
   "collectionName": "components_home_tiles_home_tiles",
   "info": {
-    "displayName": "HomeTiles"
+    "displayName": "HomeTiles",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "TileOne": {
+    "Rolam": {
       "type": "string"
     },
-    "TileTwo": {
+    "Csoportok": {
       "type": "string"
     },
-    "TileThree": {
+    "Addiktologia": {
       "type": "string"
     },
-    "TileFour": {
+    "Arak": {
       "type": "string"
     },
-    "TileOneRich": {
+    "RolamRich": {
       "type": "richtext"
     },
-    "TileTwoRich": {
+    "CsoportokRich": {
       "type": "richtext"
     },
-    "TileThreeRich": {
+    "AddiktologiaRich": {
       "type": "richtext"
     },
-    "TileFourRich": {
+    "ArakRich": {
       "type": "richtext"
     }
   }

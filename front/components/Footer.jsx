@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-[#1B1B1B] text-[#9F844E] text-lg py-5">
+    <div className="bg-[#1B1B1B] text-[#9F844E] text-lg py-10">
       <div className="sm:flex sm:justify-around sm:p-5">
-        <div className="flex items-center justify-center pb-4">
+        <div className="flex items-center justify-center pb-7">
           <svg
             width="25"
             height="25"
@@ -29,7 +29,7 @@ const Footer = () => {
           </svg>
           <p>06 30 985 7441</p>
         </div>
-        <div className="flex items-center justify-center pb-4">
+        <div className="flex items-center justify-center pb-7">
           <svg
             width="30"
             height="30"
@@ -46,7 +46,7 @@ const Footer = () => {
 
           <p>info@eniranyitok.hu</p>
         </div>
-        <div className="flex items-center justify-center pb-4">
+        <div className="flex items-center justify-center pb-7">
           <svg
             width="25"
             height="25"
@@ -79,7 +79,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="flex items-center justify-center pb-5">
+      <div className="flex items-center justify-center">
         <p className="mr-2">Minden jog fenntartva</p>
         <span>
           <svg

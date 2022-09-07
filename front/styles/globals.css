@@ -55,6 +55,14 @@ a {
   background: #9f844e;
 }
 
+.pricing-card {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(22, 23, 24, 0.75);
+  border-radius: 12px;
+  border: 2px solid #161718;
+}
+
 .card {
   backdrop-filter: blur(11px) saturate(151%);
   -webkit-backdrop-filter: blur(11px) saturate(151%);
@@ -150,4 +158,14 @@ a {
 
 .custom-link-underline:hover::after {
   width: 100%;
+}
+
+.arak {
+  background-color: hsla(40, 34%, 46%, 1);
+  background-image: radial-gradient(
+      at 0% 1%,
+      hsla(210, 4%, 9%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 99% 99%, hsla(210, 4%, 9%, 1) 0px, transparent 50%);
 }

@@ -117,3 +117,37 @@ a {
   opacity: 0;
   transform: scale(0.1, 1);
 }
+
+.custom-underline {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.custom-underline::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 60%;
+  background-color: #9f844e;
+  bottom: 0;
+  left: 0;
+}
+
+.custom-link-underline {
+  position: relative;
+}
+
+.custom-link-underline::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: #9f844e;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-link-underline:hover::after {
+  width: 100%;
+}

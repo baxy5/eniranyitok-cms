@@ -7,7 +7,7 @@ const About = () => {
       <h2 className="font-bold text-6xl uppercase mb-10 md:text-8xl lg:text-9xl">
         Szalai <br /> Éva
       </h2>
-      <Link href="/about">
+      <Link href="/rolam">
         <a className="btn-one text-xl uppercase px-6 py-3">Rólam</a>
       </Link>
     </div>

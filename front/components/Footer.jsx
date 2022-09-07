@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -78,6 +79,11 @@ const Footer = () => {
             facebook
           </a>
         </div>
+      </div>
+      <div className="flex items-center justify-center pb-7">
+        <Link href="/">
+          <a className="custom-link-underline">Vissza a főoldalra.</a>
+        </Link>
       </div>
       <div className="flex items-center justify-center">
         <p className="mr-2">Minden jog fenntartva</p>

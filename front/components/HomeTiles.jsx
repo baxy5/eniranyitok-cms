@@ -14,7 +14,7 @@ const HomeTiles = () => {
   };
 
   useEffect(() => {
-    const data = fetchData();
+    fetchData();
   }, []);
 
   return (

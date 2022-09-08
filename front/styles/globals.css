@@ -56,10 +56,8 @@ a {
 }
 
 .pricing-card {
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(22, 23, 24, 0.75);
-  border-radius: 12px;
+  background-color: #9f844e;
+  border-radius: 7px;
   border: 2px solid #161718;
 }
 
@@ -161,11 +159,14 @@ a {
 }
 
 .arak {
-  background-color: hsla(40, 34%, 46%, 1);
+  /* background-color: hsla(40, 34%, 46%, 1);
   background-image: radial-gradient(
       at 0% 1%,
       hsla(210, 4%, 9%, 1) 0px,
       transparent 50%
     ),
-    radial-gradient(at 99% 99%, hsla(210, 4%, 9%, 1) 0px, transparent 50%);
+    radial-gradient(at 99% 99%, hsla(210, 4%, 9%, 1) 0px, transparent 50%); */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1177%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(22%2c 23%2c 24%2c 1)'%3e%3c/rect%3e%3ccircle r='26.6' cx='93.11' cy='387.8' fill='rgba(59%2c 59%2c 59%2c 1)'%3e%3c/circle%3e%3ccircle r='32.53' cx='638.34' cy='182.45' fill='rgba(59%2c 59%2c 59%2c 1)'%3e%3c/circle%3e%3ccircle r='25.44' cx='10.16' cy='355.57' fill='rgba(59%2c 59%2c 59%2c 1)'%3e%3c/circle%3e%3ccircle r='53.895' cx='1387.67' cy='290.41' fill='rgba(59%2c 59%2c 59%2c 1)'%3e%3c/circle%3e%3ccircle r='50.53' cx='1204.75' cy='550.11' fill='rgba(59%2c 59%2c 59%2c 1)'%3e%3c/circle%3e%3ccircle r='45.51' cx='303.11' cy='109.81' fill='rgba(59%2c 59%2c 59%2c 1)'%3e%3c/circle%3e%3ccircle r='31.82' cx='1154.43' cy='64.17' fill='rgba(59%2c 59%2c 59%2c 1)'%3e%3c/circle%3e%3ccircle r='32.245' cx='740.76' cy='545.93' fill='rgba(59%2c 59%2c 59%2c 1)'%3e%3c/circle%3e%3ccircle r='36.595' cx='212.02' cy='12.68' fill='rgba(59%2c 59%2c 59%2c 1)'%3e%3c/circle%3e%3ccircle r='31.395' cx='1405.59' cy='229.85' fill='rgba(59%2c 59%2c 59%2c 1)'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1177'%3e%3crect width='1440' height='560' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+  background-position: center;
+  background-size: cover;
 }

@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 import Layout from "../components/Layout";
 import HomeTiles from "../components/HomeTiles";
 
-export default function Rolam({ aboutData, mainTilesData }) {
+export default function About({ aboutData, mainTilesData }) {
   return (
     <div>
       <Layout>

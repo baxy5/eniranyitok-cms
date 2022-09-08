@@ -2,7 +2,7 @@ import Layout from "../components/Layout";
 import HomeTiles from "../components/HomeTiles";
 import Pricing from "../components/Pricing";
 
-export default function Home({ pricingData, mainTilesData, title }) {
+export default function Price({ pricingData, mainTilesData, title }) {
   return (
     <div>
       <Layout>

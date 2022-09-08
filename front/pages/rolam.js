@@ -1,25 +1,10 @@
+import React from "react";
 import ReactMarkdown from "react-markdown";
 
 import Layout from "../components/Layout";
 import HomeTiles from "../components/HomeTiles";
-import React, { useState } from "react";
-import { useEffect } from "react";
 
-export default function Rolam() {
-  const [aboutData, setAboutData] = useState({});
-
-  const fetchData = () => {
-    fetch("https://eniranyitok-cms.herokuapp.com/api/about?populate=*")
-      .then((res) => res.json())
-      .then((res) => {
-        setAboutData(res.data.attributes.AboutSection[0]);
-      });
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
+export default function Rolam({ aboutData, mainTilesData }) {
   return (
     <div>
       <Layout>
@@ -30,16 +15,32 @@ export default function Rolam() {
             </h1>
           </div>
           <div>
-            {/* <ReactMarkdown className="sm:text-lg">
-              {aboutData.Text}
-            </ReactMarkdown> */}
             <ReactMarkdown children={aboutData.Text} />
           </div>
         </div>
         <div className="bg-[#161718]">
-          <HomeTiles />
+          <HomeTiles data={mainTilesData} />
         </div>
       </Layout>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const [about, mainTiles] = await Promise.all([
+    fetch("https://eniranyitok-cms.herokuapp.com/api/about?populate=*"),
+    fetch("https://eniranyitok-cms.herokuapp.com/api/home?populate=*"),
+  ]);
+
+  const aboutDataJSON = await about.json();
+  const mainTilesDataJSON = await mainTiles.json();
+  const aboutData = await aboutDataJSON.data.attributes.AboutSection[0];
+  const mainTilesData = await mainTilesDataJSON.data.attributes.HomeTiles[0];
+
+  return {
+    props: {
+      aboutData,
+      mainTilesData,
+    },
+  };
 }

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import HomeTiles from "../components/HomeTiles";
 
-const Hero = () => {
+const Hero = ({ tilesData }) => {
   return (
     <div className="main-nav h-full">
       <div className="flex justify-center items-center text-center py-24">
@@ -22,7 +22,7 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <HomeTiles />
+      <HomeTiles data={tilesData} />
     </div>
   );
 };

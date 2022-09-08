@@ -4,7 +4,8 @@
   "info": {
     "singularName": "price",
     "pluralName": "prices",
-    "displayName": "Price"
+    "displayName": "Price",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,6 +16,9 @@
       "type": "component",
       "repeatable": true,
       "component": "prices-tiles.prices-tiles"
+    },
+    "Title": {
+      "type": "string"
     }
   }
 }

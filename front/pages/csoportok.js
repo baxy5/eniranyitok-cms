@@ -17,8 +17,8 @@ export default function Group({ tilesData, groupsData }) {
 
 export async function getStaticProps() {
   const [tiles, groups] = await Promise.all([
-    fetch("https://eniranyitok-cms.herokuapp.com/api/home?populate=*"),
-    fetch("https://eniranyitok-cms.herokuapp.com/api/group?populate=*"),
+    fetch(process.env.NEXT_PUBLIC_HOME_API),
+    fetch(process.env.NEXT_PUBLIC_GROUP_API),
   ]);
 
   const tilesJSON = await tiles.json();

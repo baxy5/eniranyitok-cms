@@ -14,9 +14,7 @@ export default function Home({ data }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch(
-    "https://eniranyitok-cms.herokuapp.com/api/home?populate=*"
-  );
+  const res = await fetch(process.env.NEXT_PUBLIC_HOME_API);
   const json = await res.json();
   const data = await json.data.attributes.HomeTiles[0];
 

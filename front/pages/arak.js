@@ -17,8 +17,8 @@ export default function Price({ pricingData, mainTilesData, title }) {
 
 export async function getStaticProps() {
   const [pricing, mainTiles] = await Promise.all([
-    fetch("https://eniranyitok-cms.herokuapp.com/api/price?populate=*"),
-    fetch("https://eniranyitok-cms.herokuapp.com/api/home?populate=*"),
+    fetch(process.env.NEXT_PUBLIC_PRICE_API),
+    fetch(process.env.NEXT_PUBLIC_HOME_API),
   ]);
 
   const pricingDataJSON = await pricing.json();

@@ -17,8 +17,8 @@ export default function Addiktologia({ tilesData, addData }) {
 
 export async function getStaticProps() {
   const [tiles, addiktologia] = await Promise.all([
-    fetch("https://eniranyitok-cms.herokuapp.com/api/home?populate=*"),
-    fetch("https://eniranyitok-cms.herokuapp.com/api/addiktologia?populate=*"),
+    fetch(process.env.NEXT_PUBLIC_HOME_API),
+    fetch(process.env.NEXT_PUBLIC_ADDIKTOLOGIA_API),
   ]);
 
   const tilesJSON = await tiles.json();

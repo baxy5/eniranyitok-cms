@@ -19,8 +19,8 @@ export default function About({ aboutData, mainTilesData }) {
 
 export async function getStaticProps() {
   const [about, mainTiles] = await Promise.all([
-    fetch("https://eniranyitok-cms.herokuapp.com/api/about?populate=*"),
-    fetch("https://eniranyitok-cms.herokuapp.com/api/home?populate=*"),
+    fetch(process.env.NEXT_PUBLIC_ABOUT_API),
+    fetch(process.env.NEXT_PUBLIC_HOME_API),
   ]);
 
   const aboutDataJSON = await about.json();

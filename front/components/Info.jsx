@@ -10,7 +10,7 @@ export default function Info({ data }) {
         </h1>
       </div>
       <div>
-        <ReactMarkdown children={data.Text} />
+        <ReactMarkdown>{data.Text}</ReactMarkdown>
       </div>
     </div>
   );

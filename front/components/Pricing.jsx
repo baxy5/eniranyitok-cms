@@ -9,11 +9,11 @@ const Pricing = ({ data, title }) => {
           {title}
         </h1>
         <div className="text-[#161718] bg-transparent flex justify-around flex-wrap gap-10 p-10">
-          <PricingTiles title={data.PriceOne} text={data.PriceOneName} />
-          <PricingTiles title={data.PriceTwo} text={data.PriceTwoName} />
-          <PricingTiles title={data.PriceThree} text={data.PriceThreeName} />
-          <PricingTiles title={data.PriceFour} text={data.PriceFourName} />
-          <PricingTiles title={data.PriceFive} text={data.PriceFiveName} />
+          <PricingTiles amount={data.PriceOne} text={data.PriceOneName} />
+          <PricingTiles amount={data.PriceTwo} text={data.PriceTwoName} />
+          <PricingTiles amount={data.PriceThree} text={data.PriceThreeName} />
+          <PricingTiles amount={data.PriceFour} text={data.PriceFourName} />
+          <PricingTiles amount={data.PriceFive} text={data.PriceFiveName} />
         </div>
       </div>
     </div>

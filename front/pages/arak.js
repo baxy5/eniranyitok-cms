@@ -17,8 +17,8 @@ export default function Price({ pricingData, mainTilesData, title }) {
 
 export async function getStaticProps() {
   const [pricing, mainTiles] = await Promise.all([
-    fetch(process.env.NEXT_PUBLIC_API_URL + "api/price?populate=*"),
-    fetch(process.env.NEXT_PUBLIC_API_URL + "api/home?populate=*"),
+    fetch(process.env.NEXT_PUBLIC_PRICE_API),
+    fetch(process.env.NEXT_PUBLIC_HOME_API),
   ]);
 
   const pricingDataJSON = await pricing.json();

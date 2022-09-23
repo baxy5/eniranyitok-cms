@@ -7,7 +7,7 @@ const GroupTiles = ({ title, text }) => {
       <div>
         <h2 className="text-2xl mb-5 md:text-4xl">{text}</h2>
         <Link href="">
-          <a className="border-2 rounded-sm border-[#161718] text-xl p-2 hover:bg-[#161718] hover:text-[#9f844e] transition-all ease-in-out duration-150">
+          <a className="border-2 rounded-sm border-[#161718] sm:text-xl p-2 hover:bg-[#161718] hover:text-[#9f844e] transition-all ease-in-out duration-150">
             {title}
           </a>
         </Link>

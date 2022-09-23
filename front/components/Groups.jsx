@@ -10,7 +10,7 @@ const Groups = ({ data }) => {
           Csoportok
         </h1>
       </div>
-      <div className="text-[#161718] flex justify-around flex-wrap gap-10 p-10 sm:py-48">
+      <div className="text-[#161718] flex justify-around flex-wrap gap-10 sm:p-10 sm:py-48">
         {/* href needed */}
         <GroupTiles title={data.TileOne} text={data.TileOneRich} />
         <GroupTiles title={data.TileTwo} text={data.TileTwoRich} />

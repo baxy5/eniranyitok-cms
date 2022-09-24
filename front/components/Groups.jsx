@@ -17,8 +17,7 @@ const Groups = ({ data }) => {
         <GroupTiles title={data.TileThree} text={data.TileThreeRich} />
         <GroupTiles title={data.TileFour} text={data.TileFourRich} />
         <GroupTiles title={data.TileFive} text={data.TileFiveRich} />
-        {/* Strapi content needed */}
-        <GroupTiles title={data.TileFive} text={data.TileFiveRich} />
+        <GroupTiles title={data.TileSix} text={data.TileSixRich} />
       </div>
     </div>
   );

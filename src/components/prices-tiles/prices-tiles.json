@@ -35,6 +35,48 @@
     },
     "PriceFiveName": {
       "type": "string"
+    },
+    "PriceSix": {
+      "type": "string"
+    },
+    "PriceSixName": {
+      "type": "string"
+    },
+    "PriceSeven": {
+      "type": "string"
+    },
+    "PriceSevenName": {
+      "type": "string"
+    },
+    "PriceEight": {
+      "type": "string"
+    },
+    "PriceEightName": {
+      "type": "string"
+    },
+    "PriceNine": {
+      "type": "string"
+    },
+    "PriceNineName": {
+      "type": "string"
+    },
+    "PriceTen": {
+      "type": "string"
+    },
+    "PriceTenName": {
+      "type": "string"
+    },
+    "PriceEleven": {
+      "type": "string"
+    },
+    "PriceElevenName": {
+      "type": "string"
+    },
+    "PriceTwelve": {
+      "type": "string"
+    },
+    "PriceTwelveName": {
+      "type": "string"
     }
   }
 }

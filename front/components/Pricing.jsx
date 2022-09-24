@@ -14,6 +14,13 @@ const Pricing = ({ data, title }) => {
           <PricingTiles amount={data.PriceThree} text={data.PriceThreeName} />
           <PricingTiles amount={data.PriceFour} text={data.PriceFourName} />
           <PricingTiles amount={data.PriceFive} text={data.PriceFiveName} />
+          <PricingTiles amount={data.PriceSix} text={data.PriceSixName} />
+          <PricingTiles amount={data.PriceSeven} text={data.PriceSevenName} />
+          <PricingTiles amount={data.PriceEight} text={data.PriceEightName} />
+          <PricingTiles amount={data.PriceNine} text={data.PriceNineName} />
+          <PricingTiles amount={data.PriceTen} text={data.PriceTenName} />
+          <PricingTiles amount={data.PriceEleven} text={data.PriceElevenName} />
+          <PricingTiles amount={data.PriceTwelve} text={data.PriceTwelveName} />
         </div>
       </div>
     </div>

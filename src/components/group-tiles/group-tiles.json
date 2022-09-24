@@ -1,7 +1,8 @@
 {
   "collectionName": "components_group_tiles_group_tiles",
   "info": {
-    "displayName": "GroupTiles"
+    "displayName": "GroupTiles",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -33,6 +34,12 @@
       "type": "richtext"
     },
     "TileFiveRich": {
+      "type": "richtext"
+    },
+    "TileSix": {
+      "type": "string"
+    },
+    "TileSixRich": {
       "type": "richtext"
     }
   }

@@ -73,7 +73,7 @@ const Footer = () => {
 
           <a
             className="uppercase"
-            href="https://www.facebook.com/profile.php?id=100003064566825"
+            href="https://www.facebook.com/profile.php?id=100075920836743"
             target="blank"
           >
             facebook

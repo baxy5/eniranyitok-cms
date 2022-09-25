@@ -22,25 +22,31 @@
       "type": "string"
     },
     "TileOneRich": {
-      "type": "richtext"
+      "type": "richtext",
+      "maxLength": 170
     },
     "TileTwoRich": {
-      "type": "richtext"
+      "type": "richtext",
+      "maxLength": 170
     },
     "TileThreeRich": {
-      "type": "richtext"
+      "type": "richtext",
+      "maxLength": 170
     },
     "TileFourRich": {
-      "type": "richtext"
+      "type": "richtext",
+      "maxLength": 170
     },
     "TileFiveRich": {
-      "type": "richtext"
+      "type": "richtext",
+      "maxLength": 170
     },
     "TileSix": {
       "type": "string"
     },
     "TileSixRich": {
-      "type": "richtext"
+      "type": "richtext",
+      "maxLength": 170
     }
   }
 }

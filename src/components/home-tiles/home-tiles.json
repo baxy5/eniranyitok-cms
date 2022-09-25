@@ -19,16 +19,20 @@
       "type": "string"
     },
     "RolamRich": {
-      "type": "richtext"
+      "type": "richtext",
+      "maxLength": 170
     },
     "CsoportokRich": {
-      "type": "richtext"
+      "type": "richtext",
+      "maxLength": 170
     },
     "AddiktologiaRich": {
-      "type": "richtext"
+      "type": "richtext",
+      "maxLength": 170
     },
     "ArakRich": {
-      "type": "richtext"
+      "type": "richtext",
+      "maxLength": 170
     }
   }
 }

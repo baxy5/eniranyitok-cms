@@ -15,7 +15,7 @@ export default function Price({ pricingData, mainTilesData, title }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const [pricing, mainTiles] = await Promise.all([
     fetch(process.env.NEXT_PUBLIC_PRICE_API),
     fetch(process.env.NEXT_PUBLIC_HOME_API),

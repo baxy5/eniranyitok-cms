@@ -15,7 +15,7 @@ export default function Group({ tilesData, groupsData }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const [tiles, groups] = await Promise.all([
     fetch(process.env.NEXT_PUBLIC_HOME_API),
     fetch(process.env.NEXT_PUBLIC_GROUP_API),

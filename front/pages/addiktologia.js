@@ -15,7 +15,7 @@ export default function Addiktologia({ tilesData, addData }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const [tiles, addiktologia] = await Promise.all([
     fetch(process.env.NEXT_PUBLIC_HOME_API),
     fetch(process.env.NEXT_PUBLIC_ADDIKTOLOGIA_API),

@@ -17,7 +17,7 @@ export default function About({ aboutData, mainTilesData }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const [about, mainTiles] = await Promise.all([
     fetch(process.env.NEXT_PUBLIC_ABOUT_API),
     fetch(process.env.NEXT_PUBLIC_HOME_API),

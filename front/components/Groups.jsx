@@ -6,7 +6,7 @@ const Groups = ({ data }) => {
   return (
     <div className="csoportok">
       <div className="flex justify-center items-center pt-10">
-        <h1 className="text-3xl sm:text-6xl text-[#9f844e] font-bold">
+        <h1 className="text-3xl sm:text-6xl pb-10 text-[#9f844e] font-bold">
           Csoportok
         </h1>
       </div>

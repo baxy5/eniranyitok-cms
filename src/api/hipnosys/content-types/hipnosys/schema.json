@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "hipno",
+  "info": {
+    "singularName": "hipnosys",
+    "pluralName": "hipno",
+    "displayName": "Hipnosys"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Hipnozis = ({data}) => {
+const Hipnozis = ({hipnosisData, aboutData, mainTilesData}) => {
   return (
-    <div>{data.attributes.title}</div>
+    <div>{hipnosisData.title}</div>
   )
 }
 

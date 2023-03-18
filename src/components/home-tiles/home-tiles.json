@@ -33,6 +33,12 @@
     "ArakRich": {
       "type": "richtext",
       "maxLength": 170
+    },
+    "Hipnozis": {
+      "type": "string"
+    },
+    "HipnozisRich": {
+      "type": "richtext"
     }
   }
 }

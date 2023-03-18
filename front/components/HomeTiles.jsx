@@ -19,6 +19,8 @@ const HomeTiles = ({ data }) => {
       />
 
       <Tile title={data.Arak} text={data.ArakRich} href="/arak" />
+
+      <Tile title={data.Hipnozis} text={data.HipnozisRich} href="/hipnozis" />
     </div>
   );
 };

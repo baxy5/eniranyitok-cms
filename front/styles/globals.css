@@ -22,6 +22,14 @@ a {
   box-sizing: border-box;
 }
 
+@layer base {
+  ul, ol {
+    list-style: revert;
+    padding: revert;
+    margin: revert;
+  }
+}
+
 .quote {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../public/idezet_bg.jpg);

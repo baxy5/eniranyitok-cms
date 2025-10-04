@@ -1,17 +1,18 @@
 import Info from "../components/Info";
-import React from "react";
-
 import Layout from "../components/Layout";
 import HomeTiles from "../components/HomeTiles";
+import { getStrapiData } from "../utils/data";
 
 export default function About({ aboutData, mainTilesData }) {
   return (
     <div>
       <Layout>
-        <Info data={aboutData} />
-        <div className="bg-[#161718]">
-          <HomeTiles data={mainTilesData} />
-        </div>
+        {aboutData && <Info data={aboutData} />}
+        {mainTilesData && (
+          <div className="bg-[#161718]">
+            <HomeTiles data={mainTilesData} />
+          </div>
+        )}
       </Layout>
     </div>
   );
@@ -19,19 +20,17 @@ export default function About({ aboutData, mainTilesData }) {
 
 export async function getServerSideProps() {
   const [about, mainTiles] = await Promise.all([
-    fetch(process.env.NEXT_PUBLIC_ABOUT_API),
-    fetch(process.env.NEXT_PUBLIC_HOME_API),
+    await getStrapiData("/about"),
+    await getStrapiData("/home"),
   ]);
 
-  const aboutDataJSON = await about.json();
-  const mainTilesDataJSON = await mainTiles.json();
-  const aboutData = await aboutDataJSON.data.attributes.AboutSection[0];
-  const mainTilesData = await mainTilesDataJSON.data.attributes.HomeTiles[0];
+  const aboutData = about.data.attributes.AboutSection;
+  const mainTilesData = mainTiles.data.attributes.HomeTiles;
 
   return {
     props: {
-      aboutData,
-      mainTilesData,
+      aboutData: aboutData || {},
+      mainTilesData: mainTilesData || {},
     },
   };
 }

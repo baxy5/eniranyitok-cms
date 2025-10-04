@@ -1,15 +1,18 @@
 import Layout from "../components/Layout";
 import HomeTiles from "../components/HomeTiles";
 import Info from "../components/Info";
+import { getStrapiData } from "../utils/data";
 
 export default function Addiktologia({ tilesData, addData }) {
   return (
     <div>
       <Layout>
-        <Info data={addData} />
-        <div className="bg-[#161718]">
-          <HomeTiles data={tilesData} />
-        </div>
+        {addData && <Info data={addData} />}
+        {tilesData && (
+          <div className="bg-[#161718]">
+            <HomeTiles data={tilesData} />
+          </div>
+        )}
       </Layout>
     </div>
   );
@@ -17,20 +20,17 @@ export default function Addiktologia({ tilesData, addData }) {
 
 export async function getServerSideProps() {
   const [tiles, addiktologia] = await Promise.all([
-    fetch(process.env.NEXT_PUBLIC_HOME_API),
-    fetch(process.env.NEXT_PUBLIC_ADDIKTOLOGIA_API),
+    await getStrapiData("/home"),
+    await getStrapiData("/addiktologia"),
   ]);
 
-  const tilesJSON = await tiles.json();
-  const addJSON = await addiktologia.json();
-
-  const tilesData = await tilesJSON.data.attributes.HomeTiles[0];
-  const addData = await addJSON.data.attributes.AddiktologiaSection[0];
+  const tilesData = tiles.data.attributes.HomeTiles;
+  const addData = addiktologia.data.attributes.AddiktologiaSection;
 
   return {
     props: {
-      tilesData,
-      addData,
+      tilesData: tilesData || {},
+      addData: addData || {},
     },
   };
 }

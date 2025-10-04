@@ -1,15 +1,18 @@
 import Layout from "../components/Layout";
 import HomeTiles from "../components/HomeTiles";
 import Groups from "../components/Groups";
+import { getStrapiData } from "../utils/data";
 
 export default function Group({ tilesData, groupsData }) {
   return (
     <div>
       <Layout>
-        <Groups data={groupsData} />
-        <div className="bg-[#161718]">
-          <HomeTiles data={tilesData} />
-        </div>
+        {groupsData && <Groups data={groupsData} />}
+        {tilesData && (
+          <div className="bg-[#161718]">
+            <HomeTiles data={tilesData} />
+          </div>
+        )}
       </Layout>
     </div>
   );
@@ -17,20 +20,17 @@ export default function Group({ tilesData, groupsData }) {
 
 export async function getServerSideProps() {
   const [tiles, groups] = await Promise.all([
-    fetch(process.env.NEXT_PUBLIC_HOME_API),
-    fetch(process.env.NEXT_PUBLIC_GROUP_API),
+    await getStrapiData("/home"),
+    await getStrapiData("/group"),
   ]);
 
-  const tilesJSON = await tiles.json();
-  const groupsJSON = await groups.json();
-
-  const tilesData = await tilesJSON.data.attributes.HomeTiles[0];
-  const groupsData = await groupsJSON.data.attributes.GroupTiles[0];
+  const tilesData = tiles.data.attributes.HomeTiles;
+  const groupsData = groups.data.attributes.GroupTiles;
 
   return {
     props: {
-      tilesData,
-      groupsData,
+      tilesData: tilesData || {},
+      groupsData: groupsData || {},
     },
   };
 }

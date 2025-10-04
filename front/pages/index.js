@@ -1,12 +1,13 @@
 import Layout from "../components/Layout";
 import About from "../components/About";
 import Hero from "../components/Hero";
+import { getStrapiData } from "../utils/data";
 
 export default function Home({ data }) {
   return (
     <div>
       <Layout>
-        <Hero tilesData={data} />
+        {data && <Hero tilesData={data} />}
         <About />
       </Layout>
     </div>
@@ -14,13 +15,12 @@ export default function Home({ data }) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch(process.env.NEXT_PUBLIC_HOME_API);
-  const json = await res.json();
-  const data = await json.data.attributes.HomeTiles[0];
+  const data = await getStrapiData("/home");
+  const homeData = data.data.attributes.HomeTiles;
 
   return {
     props: {
-      data,
+      data: homeData || {},
     },
   };
 }

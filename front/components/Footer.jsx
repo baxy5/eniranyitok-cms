@@ -103,10 +103,10 @@ const Footer = () => {
         </span>
         <a
           className="font-bold uppercase ml-2"
-          href="https://www.adaptics.hu/"
+          href="https://www.whiz.hu/"
           target="blank"
         >
-          Adaptics
+          Whiz
         </a>
       </div>
     </div>

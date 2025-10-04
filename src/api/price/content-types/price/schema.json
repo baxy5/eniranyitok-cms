@@ -14,7 +14,7 @@
   "attributes": {
     "PricesTiles": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "prices-tiles.prices-tiles"
     },
     "Title": {

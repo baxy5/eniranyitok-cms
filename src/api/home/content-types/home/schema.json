@@ -14,7 +14,7 @@
   "attributes": {
     "HomeTiles": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "home-tiles.home-tiles"
     }
   }
